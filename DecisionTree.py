@@ -12,7 +12,7 @@ nosplitpredictions = decision_tree_model.predict(data)
 #print(mean_absolute_error(prediction_target, nosplitpredictions))
 
 # model
-decision_tree_model = DecisionTreeRegressor()
+decision_tree_model = DecisionTreeRegressor(random_state=1)
 decision_tree_model.fit(train_data, train_target)
 
 # predicion
